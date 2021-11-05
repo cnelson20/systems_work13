@@ -150,15 +150,6 @@ int add_data() {
 	write(fd,list,stp.st_size+sizeof(struct pop_entry));
 	close(fd);
 	
-	// Append isn't working ? or im dumb 
-	//int fd = open("nyc_data.bin",O_APPEND);
-	//if (fd == -1) {printf("%s\n",strerror(errno)); return errno;}
-	//printf("%d",fd);
-	//if (write(fd,&entry,sizeof(struct pop_entry)) == -1) {
-	//	printf("%s\n",strerror(errno));
-	//}
-	//close(fd);
-	
 	return 0;
 }
 
